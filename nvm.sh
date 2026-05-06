@@ -3211,7 +3211,7 @@ nvm() {
         nvm_echo '    --skip-default-packages                   When installing, skip the default-packages file if it exists'
         nvm_echo '    --latest-npm                              After installing, attempt to upgrade to the latest working npm on the given node version'
         nvm_echo '    --no-progress                             Disable the progress bar on any downloads'
-        nvm_echo '    --offline                                  Install from cache only, without downloading anything'
+        nvm_echo '    --offline                                 Install from cache only, without downloading anything'
         nvm_echo '    --alias=<name>                            After installing, set the alias specified to the version specified. (same as: nvm alias <name> <version>)'
         nvm_echo '    --default                                 After installing, set default alias to the version specified. (same as: nvm alias default <version>)'
         nvm_echo '    --save                                    After installing, write the specified version to .nvmrc'
