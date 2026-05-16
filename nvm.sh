@@ -4328,7 +4328,7 @@ nvm() {
 
       local NVM_OUTPUT
       local EXIT_CODE
-      NVM_OUTPUT="$(NVM_LTS="${NVM_LTS-}" nvm_remote_versions "${PATTERN}" &&:)"
+      NVM_OUTPUT="$(NVM_LTS="${NVM_LTS-}" nvm_remote_versions "${PATTERN-}" &&:)"
       EXIT_CODE=$?
       if [ -n "${NVM_OUTPUT}" ]; then
         NVM_NO_COLORS="${NVM_NO_COLORS-}" nvm_print_versions "${NVM_OUTPUT}"
